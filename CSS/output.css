@@ -1,5 +1,17 @@
+.button {
+  border-radius: 15px;
+  padding: 0 5px 0 5px;
+}
+
 .btn-primary {
   background-color: #0000ff;
+}
+.btn-primary:hover {
+  background-color: #6c757d;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /*# sourceMappingURL=output.css.map */
