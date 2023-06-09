@@ -1,28 +1,22 @@
 @import 'variables';
-// $button-size: "";
-// .button {
-//     @if $button-size == "small" {
-//       font-size: .5rem;
-//     } @else if $button-size == "medium" {
-//       font-size: 1.5rem;
-//     } @else if $button-size == "large" {
-//       font-size: 3rem;
-//     } @else {
-//       font-size: 1rem;
-//     }
-//   }
 
 .button{
-   border-radius: 15px; 
+   border-radius: 5px; 
    padding:0 5px  0 5px ;
    
-
 }
 
+
 .#{$button-prefix}-primary {
+    @extend .button;
 
     background-color: $primary-color;
     &:hover{
         background-color: $secondary-color;
     }
+}
+
+.#{$button-prefix}-dark {
+    background-color: #242526;
+    color: #e4e6eb;
 }
