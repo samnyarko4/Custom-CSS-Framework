@@ -1,4 +1,11 @@
+//importing Buttons
 @import 'buttons';
+
+//importing variables
+@import 'variables';
+
+// importing utility classes
+@import 'utilities';
 
 
 
@@ -6,8 +13,57 @@ h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-// Utility Classes
+h2{
 
-//Font Weight
+}
 
+// Navigation bar
+.nav-dark {
+    background-color: $secondary-color;
+    padding: 10px;
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        display: inline-block;
+        margin-right: 10px;
+  
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          //Note the use of & within the nested selector (&:hover). The & symbol refers to the parent selector, allowing you to create nested pseudo-classes or pseudo-elements.
+          &:hover {
+            text-decoration: underline;
+          }
+        }//Closes 'a' tag
+      }//Closes 'li' tag
+    }//Closes 'ul' tag
+  }//Closes 'nav' class
 
+  .nav-light {
+    background-color: $tetiary-color;
+    padding: 10px;
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        display: inline-block;
+        margin-right: 10px;
+  
+        a {
+          color: $secondary-text;
+          text-decoration: none;
+          //Note the use of & within the nested selector (&:hover). The & symbol refers to the parent selector, allowing you to create nested pseudo-classes or pseudo-elements.
+          &:hover {
+            text-decoration: underline;
+          }
+        }//Closes 'a' tag
+      }//Closes 'li' tag
+    }//Closes 'ul' tag
+  }//Closes 'nav' class

@@ -1,13 +1,14 @@
 .button, .btn-primary {
   border-radius: 5px;
   padding: 0 5px 0 5px;
+  color: #e4e6eb;
 }
 
 .btn-primary {
-  background-color: #0000ff;
+  background-color: #242526;
 }
 .btn-primary:hover {
-  background-color: #6c757d;
+  background-color: #242526;
 }
 
 .btn-dark {
@@ -15,8 +16,206 @@
   color: #e4e6eb;
 }
 
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 4rem;
+}
+
+.p-4 {
+  padding: 6rem;
+}
+
+.p-5 {
+  padding: 8rem;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.pl-3 {
+  padding-left: 4rem;
+}
+
+.pl-4 {
+  padding-left: 6rem;
+}
+
+.pl-5 {
+  padding-left: 8rem;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pr-3 {
+  padding-right: 4rem;
+}
+
+.pr-4 {
+  padding-right: 6rem;
+}
+
+.pr-5 {
+  padding-right: 8rem;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pt-3 {
+  padding-top: 4rem;
+}
+
+.pt-4 {
+  padding-top: 6rem;
+}
+
+.pt-5 {
+  padding-top: 8rem;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 4rem;
+}
+
+.pb-4 {
+  padding-bottom: 6rem;
+}
+
+.pb-5 {
+  padding-bottom: 8rem;
+}
+
+.fs-sm {
+  font-size: 20px;
+}
+
+.fs-md {
+  font-size: 30px;
+}
+
+.fs-lg {
+  font-size: 40px;
+}
+
+.fs-xl {
+  font-size: 50px;
+}
+
+.fs-xxl {
+  font-size: 60px;
+}
+
+.fw-light {
+  font-weight: 200;
+}
+
+.fw-reg {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-xbold {
+  font-weight: 900;
+}
+
 h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.nav-dark {
+  background-color: #242526;
+  padding: 10px;
+}
+.nav-dark ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-dark ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.nav-dark ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav-dark ul li a:hover {
+  text-decoration: underline;
+}
+
+.nav-light {
+  background-color: #ffffff;
+  padding: 10px;
+}
+.nav-light ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-light ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.nav-light ul li a {
+  color: #18191A;
+  text-decoration: none;
+}
+.nav-light ul li a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=output.css.map */

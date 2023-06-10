@@ -1,0 +1,124 @@
+@use 'sass:math';
+//importing variables
+@import 'variables';
+
+// ----------------Utility Classes
+
+
+$utilities:(
+    //padding Utilities
+    "padding": (
+        "prefix": "p",
+        "values": (
+        "0": 0,
+        "1": $base-padding,
+        "2": $base-padding * 2,
+        "3": $base-padding * 4,
+        "4": $base-padding * 6,
+        "5": $base-padding * 8,
+    ),
+    ),
+
+    //padding left utilities
+    "padding-left": (
+        "prefix": "pl",
+        "values": (
+        "0": 0,
+        "1": $base-padding,
+        "2": $base-padding * 2,
+        "3": $base-padding * 4,
+        "4": $base-padding * 6,
+        "5": $base-padding * 8,
+    ),
+    ),
+
+    //padding right utilities
+    "padding-right": (
+        "prefix": "pr",
+        "values": (
+        "0": 0,
+        "1": $base-padding,
+        "2": $base-padding * 2,
+        "3": $base-padding * 4,
+        "4": $base-padding * 6,
+        "5": $base-padding * 8,
+    ),
+    ),
+
+    //padding top utilities
+    "padding-top": (
+        "prefix": "pt",
+        "values": (
+        "0": 0,
+        "1": $base-padding,
+        "2": $base-padding * 2,
+        "3": $base-padding * 4,
+        "4": $base-padding * 6,
+        "5": $base-padding * 8,
+    ),
+    ),
+
+    //padding bottom utilities
+    "padding-bottom": (
+        "prefix": "pb",
+        "values": (
+        "0": 0,
+        "1": $base-padding,
+        "2": $base-padding * 2,
+        "3": $base-padding * 4,
+        "4": $base-padding * 6,
+        "5": $base-padding * 8,
+    ),
+    ),
+
+    //font size utility classes
+    "font-size": (
+        "prefix": "fs",
+        "values": (
+        "sm": $font-size-sm,
+        "md": $base-font-size,
+        "lg": $font-size-lg,
+        "xl": $font-size-xl,
+        "xxl": $font-size-xxl,
+    ),
+    ),
+
+    //font weight utility classes
+    "font-weight": (
+        "prefix": "fw",
+        "values": (
+        "light": 200,
+        "reg": 400,
+        "bold": 700,
+        "xbold": 900,
+    ),
+    ),
+);
+
+
+@each $property, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $k, $v in $values{
+        @if($k == "default") {
+            .#{$prefix}-#{$k}{
+                #{property}:$v;
+            }
+        } @else {
+            .#{$prefix}-#{$k}{
+                #{$property}:$v;
+            }
+        }
+    }
+}
+//Font Weight
+
+//Font Size
+
+
+//Margin
+
+//Padding
+
+//Border
