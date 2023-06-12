@@ -6,6 +6,72 @@
 
 
 $utilities:(
+
+    //margin utilities
+    "margin": (
+        "prefix": "m",
+        "values": (
+        "0": 0,
+        "1": $base-margin,
+        "2": $base-margin * 2,
+        "3": $base-margin * 4,
+        "4": $base-margin * 6,
+        "5": $base-margin * 8,
+    ),
+    ),
+
+    //margin left utilities
+    "margin-left": (
+        "prefix": "ml",
+        "values": (
+        "0": 0,
+        "1": $base-margin,
+        "2": $base-margin * 2,
+        "3": $base-margin * 4,
+        "4": $base-margin * 6,
+        "5": $base-margin * 8,
+    ),
+    ),
+
+    //margin right utilities
+    "margin-right": (
+        "prefix": "mr",
+        "values": (
+        "0": 0,
+        "1": $base-margin,
+        "2": $base-margin * 2,
+        "3": $base-margin * 4,
+        "4": $base-margin * 6,
+        "5": $base-margin * 8,
+    ),
+    ),
+
+    //margin top utilities
+    "margin-top": (
+        "prefix": "mt",
+        "values": (
+        "0": 0,
+        "1": $base-margin,
+        "2": $base-margin * 2,
+        "3": $base-margin * 4,
+        "4": $base-margin * 6,
+        "5": $base-margin * 8,
+    ),
+    ),
+
+    //margin bottm utilities
+    "margin-bottom": (
+        "prefix": "mb",
+        "values": (
+        "0": 0,
+        "1": $base-margin,
+        "2": $base-margin * 2,
+        "3": $base-margin * 4,
+        "4": $base-margin * 6,
+        "5": $base-margin * 8,
+    ),
+    ),
+
     //padding Utilities
     "padding": (
         "prefix": "p",
@@ -91,6 +157,33 @@ $utilities:(
         "reg": 400,
         "bold": 700,
         "xbold": 900,
+    ),
+    ),
+
+    //Display utilities
+    "display": (
+        "prefix": "display",
+        "values": (
+        "n": 200,
+        "b": 400,
+        "f": 700,
+        "ib": 900,
+    ),
+    ),
+
+    "opacity": (
+        "prefix": "o",
+        "values": (
+        "10": 0.1,
+        "20": 0.2,
+        "30": 0.3,
+        "40": 0.4,
+        "50": 0.5,
+        "60": 0.6,
+        "70": 0.7,
+        "80": 0.8,
+        "90": 0.9,
+        "100": 1,
     ),
     ),
 );

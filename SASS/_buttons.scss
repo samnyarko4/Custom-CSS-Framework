@@ -1,22 +1,41 @@
 @import 'variables';
-
-.button{
+body#bumblebee{
+button{
    border-radius: 5px; 
-   padding:0 5px  0 5px ;
-   color: $primary-text
+   padding:5px 10px  5px 10px ;
+   background-color: $primary-color;
+   color: $primary-text;
+
+   &:hover{
+    background-color: $tetiary-color;
+    color: $primary-color
+   }
+
 }
 
 
 .#{$button-prefix}-primary {
-    @extend .button;
+    @extend button;
+    border: 1px solid $accent-color;
 
     background-color: $secondary-color;
     &:hover{
-        background-color: $secondary-color;
+        background-color: $accent-color;
+        color: $secondary-text;
     }
 }
 
-.#{$button-prefix}-dark {
-    background-color: #242526;
-    color: #e4e6eb;
+.#{$button-prefix}-secondary{
+    @extend button;
+    border: 1px solid $primary-color;
+    background-color: $accent-color;
+    color: $secondary-text;
+
+    &:hover{
+        background-color: $primary-color;
+        color: $accent-color;
+        border: 1px solid $tetiary-color;
+    }
+
+}
 }
