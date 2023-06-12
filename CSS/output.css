@@ -363,8 +363,25 @@ body#bumblebee {
   background-color: #18191A;
   margin: 0;
 }
-body#bumblebee p, body#bumblebee h1, body#bumblebee h2, body#bumblebee h3, body#bumblebee label {
+body#bumblebee h1 {
+  font-size: 50px;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #ffc107 0%, #FBAB7E 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body#bumblebee h2 {
+  font-size: 40px;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(180deg, #ffc107 0%, #FBAB7E 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body#bumblebee p, body#bumblebee h3, body#bumblebee label {
   color: #ffffff;
+}
+body#bumblebee p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body#bumblebee .nav {
   background-color: #242526;
@@ -382,6 +399,7 @@ body#bumblebee .nav ul li {
 body#bumblebee .nav ul li a {
   color: #ffffff;
   text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body#bumblebee .nav ul li a:hover {
   text-decoration: underline;
@@ -394,6 +412,7 @@ body#bumblebee ul li {
   list-style-type: none;
   color: #e4e6eb;
   padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body#bumblebee ul li a {
   text-decoration: none;
@@ -407,6 +426,7 @@ body#bumblebee table tr th {
 }
 body#bumblebee table tr td {
   color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body#bumblebee input {
   background-color: #3a3b3c;

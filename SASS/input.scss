@@ -11,9 +11,30 @@ body#bumblebee{
     background-color: $primary-color;
     margin: 0;
 
+h1{
+    font-size: 50px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg,$accent-color 0% ,#FBAB7E 20%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-p, h1, h2, h3, label{
+  h2{
+    font-size: 40px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(180deg,$accent-color 0% ,#FBAB7E 80%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+p, h3, label{
+
     color: $tetiary-color;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 // Navigation bar
@@ -33,15 +54,15 @@ p, h1, h2, h3, label{
         a {
           color: #ffffff;
           text-decoration: none;
-          //Note the use of & within the nested selector (&:hover). The & symbol refers to the parent selector, allowing you to create nested pseudo-classes or pseudo-elements.
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           &:hover {
             text-decoration: underline;
             color: $accent-color;
           }
-        }//Closes 'a' tag
-      }//Closes 'li' tag
-    }//Closes 'ul' tag
-  }//Closes 'nav' class
+        }
+      }
+    }
+  }
 
   
 
@@ -53,6 +74,7 @@ p, h1, h2, h3, label{
         list-style-type:  none;
         color: $primary-text;
         padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         
         
         a{
@@ -76,6 +98,7 @@ table{
     }
     td{
         color: $tetiary-color;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     }
 }
